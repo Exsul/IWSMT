@@ -33,13 +33,23 @@ public class ContentLoader {
                 new InputStreamReader(con.getInputStream()));
         String inputLine;
         StringBuffer response = new StringBuffer();
+        while ((inputLine = in.readLine()) != null) {
+            response.append(inputLine);
+        }
         in.close();
 
         return response.toString();
     }
 
     private Document LoadRandomDocument() throws IOException {
-        return Jsoup.connect(RANDOM_STR).get();
+        String source;
+        try {
+            source = LoadRandomSource();
+        } catch (Exception e)
+        {
+            throw new IOException();
+        }
+        return Jsoup.parse(source);
     }
 
     private int ExtractInt( final String url, final String after, final String before ) {
@@ -47,16 +57,25 @@ public class ContentLoader {
         int end_index = url.indexOf(before, index);
         if (index == -1 || end_index == -1)
             return 0;
-        String id = url.substring(index, end_index);
+        String id = url.substring(index + after.length(), end_index);
         return Integer.parseInt(id);
     }
 
+    private int ExtractInt( final String url, final String after ) {
+        int index = url.indexOf(after);
+        if (index == -1)
+            return 0;
+        String id = url.substring(index + after.length());
+        return Integer.parseInt(id);
+    }
+
+
     private int ExtractId( String url ) {
-        return ExtractInt(url, "i=", "\"");
+        return ExtractInt(url, "i=");
     }
 
     private int ExtractVote( String url ) {
-        return ExtractInt(url, "current=", "\"");
+        return ExtractInt(url, "current=");
     }
 
     private ArrayList<Element> LoadCountainers( Document a ) {
@@ -68,17 +87,37 @@ public class ContentLoader {
         return ret;
     }
 
-    private ParsedObject ParseContainer( Element a ) {
+    class CantParse extends Exception {
+
+    }
+
+    private int GetVote( Elements votes, int id ) {
+        assert(id >= 0 && id < 3);
+        String num = "one";
+        if (id == 1)
+            num = "two";
+        else if (id == 2)
+            num = "three";
+        String select = "#vote" + num;
+        Elements el = votes.select(select);
+        if (el.size() == 0)
+            return 0;
+        return ExtractVote(el.first().attr("name"));
+    }
+
+    private ParsedObject ParseContainer( Element a ) throws CantParse {
         ParsedObject ret = new ParsedObject();
         Element title = a.select("a.sub_title").first();
         ret.title = title.html();
         ret.id = ExtractId(title.attr("href"));
-        ret.img = a.select(".image > img").attr("src");
-        Elements votes = a.select(".vote_container > #vote_button");
+        ret.img = a.select(".image img").attr("src");
+        Elements votes = a.select(".vote_container .vote_button");
         for (int i = 0; i < 3; i++)
-            ret.votes_count[i] = ExtractVote(votes.get(i).attr("name"));
+            ret.votes_count[i] = GetVote(votes, i);
         ret.comments_count = Integer.parseInt(a.select(".comments_button").html());
 
+        if (ret.img.length() == 0)
+            throw new CantParse();
         return ret;
     }
 
@@ -95,7 +134,11 @@ public class ContentLoader {
 
         ArrayList<ParsedObject> ret = new ArrayList<ParsedObject>(b.size());
         while (i.hasNext())
-            ret.add(ParseContainer(i.next()));
+            try {
+                ret.add(ParseContainer(i.next()));
+            } catch (CantParse e) {
+
+            }
         return ret;
     }
 }

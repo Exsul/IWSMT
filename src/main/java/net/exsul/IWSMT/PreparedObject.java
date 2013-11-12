@@ -1,7 +1,10 @@
 package net.exsul.IWSMT;
 
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -15,7 +18,7 @@ public class PreparedObject {
 
     }
 
-    private Bitmap DownloadImage() {
+    private Bitmap DownloadImage() throws Exception {
         URL url = new URL(obj.img);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setDoInput(true);
@@ -24,9 +27,14 @@ public class PreparedObject {
         return BitmapFactory.decodeStream(is);
     }
 
-    public Bitmap Image() {
+    public Bitmap Image(final Context a) {
         if (bitmap == null)
-            bitmap = DownloadImage();
+            try {
+                bitmap = DownloadImage();
+            } catch (Exception e) {
+                Drawable dr = a.getResources().getDrawable(R.drawable.failed);
+                bitmap = ((BitmapDrawable)dr).getBitmap();
+            }
         return bitmap;
     }
 }
