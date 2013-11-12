@@ -26,20 +26,24 @@
   <component name="ChangeListManager">
     <list default="true" id="6dcf2d44-9e86-40dd-8290-068995a8f01e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IWSMT.iml" afterPath="$PROJECT_DIR$/IWSMT.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IWSMT.ipr" afterPath="$PROJECT_DIR$/IWSMT.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IWSMT.iws" afterPath="$PROJECT_DIR$/IWSMT.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/exsul/IWSMT/Random.java" afterPath="$PROJECT_DIR$/src/main/java/net/exsul/IWSMT/Random.java" />
     </list>
     <ignored path="IWSMT.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Random.java" changelist="6dcf2d44-9e86-40dd-8290-068995a8f01e" time="1384218403130" ignored="false" />
+    <file path="/Random.java" changelist="6dcf2d44-9e86-40dd-8290-068995a8f01e" time="1384299127966" ignored="false" />
     <file path="/ParsedObject.java" changelist="6dcf2d44-9e86-40dd-8290-068995a8f01e" time="1384214103153" ignored="false" />
     <file path="/ContentLoader.java" changelist="6dcf2d44-9e86-40dd-8290-068995a8f01e" time="1384220224748" ignored="false" />
     <file path="/Dummy.txt" changelist="6dcf2d44-9e86-40dd-8290-068995a8f01e" time="1384213140230" ignored="false" />
     <file path="/pom.xml" changelist="6dcf2d44-9e86-40dd-8290-068995a8f01e" time="1384213155308" ignored="false" />
-    <file path="/fragment.java" changelist="6dcf2d44-9e86-40dd-8290-068995a8f01e" time="1384220989579" ignored="false" />
+    <file path="/fragment.java" changelist="6dcf2d44-9e86-40dd-8290-068995a8f01e" time="1384297573392" ignored="false" />
     <file path="/PreparedObject.java" changelist="6dcf2d44-9e86-40dd-8290-068995a8f01e" time="1384216963394" ignored="false" />
     <file path="/main.xml" changelist="6dcf2d44-9e86-40dd-8290-068995a8f01e" time="1384216132221" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="6dcf2d44-9e86-40dd-8290-068995a8f01e" time="1384222217781" ignored="false" />
     <file path="/themes.xml" changelist="6dcf2d44-9e86-40dd-8290-068995a8f01e" time="1384221619337" ignored="false" />
+    <file path="/IWSMT.java" changelist="6dcf2d44-9e86-40dd-8290-068995a8f01e" time="1384222674671" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,21 +104,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Random.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Random.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/exsul/IWSMT/Random.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="60" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0">
+            <state line="23" column="63" selection-start="610" selection-end="610" vertical-scroll-proportion="0.28492647">
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#594#608#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="IWSMT.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/exsul/IWSMT/IWSMT.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="23" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="23" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="49" selection-start="570" selection-end="570" vertical-scroll-proportion="0.39534885">
+            <state line="5" column="38" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,27 +149,6 @@
         <entry file="file://$PROJECT_DIR$/res/values/themes.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="3" column="54" selection-start="172" selection-end="172" vertical-scroll-proportion="-2.04">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-          <provider editor-type-id="text-editor">
-            <state line="19" column="34" selection-start="814" selection-end="814" vertical-scroll-proportion="-12.92">
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParsedObject.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/exsul/IWSMT/ParsedObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="17" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -229,18 +233,19 @@
         <option value="$PROJECT_DIR$/src/main/java/net/exsul/IWSMT/ParsedObject.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/main/java/net/exsul/IWSMT/PreparedObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/exsul/IWSMT/Random.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/exsul/IWSMT/ContentLoader.java" />
         <option value="$PROJECT_DIR$/res/values/themes.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/net/exsul/IWSMT/IWSMT.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/exsul/IWSMT/Random.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="-1288" />
     <option name="y" value="-8" />
     <option name="width" value="1296" />
-    <option name="height" value="972" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -398,6 +403,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IWSMT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IWSMT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -405,19 +424,29 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="ExportedApkPath" value="C:\Users\Enelar\Documents\GitHub\IWSMT\IWSMT.apk" />
+    <property name="ExportedModule" value="IWSMT" />
+    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TestFlightLib.jar!/" />
+    <property name="AndroidLayoutSelectedEditor" value="android-designer" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="iwsmt" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="AndroidRunProguardForReleaseBuild" value="false" />
-    <property name="ExportedApkPath" value="C:\Users\Enelar\Documents\GitHub\IWSMT\IWSMT.apk" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="ExportedModule" value="IWSMT" />
-    <property name="last_opened_file_path" value="C:/google_play" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="AndroidLayoutSelectedEditor" value="android-designer" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RunManager" selected="Android Application.IWSMT">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -548,7 +577,7 @@
       <option name="MODE" value="specific_activity" />
       <option name="DEPLOY" value="true" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="debug" />
+      <option name="PREFERRED_AVD" value="LiquidShit" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
       <option name="WIPE_USER_DATA" value="false" />
@@ -595,7 +624,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="972" extended-state="6" />
+    <frame x="-1288" y="-8" width="1296" height="1000" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.67103696" order="-1" side_tool="false" content_ui="tabs" />
@@ -615,8 +644,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67103696" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32896304" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6816609" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3183391" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -689,13 +718,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="27" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/exsul/IWSMT/PreparedObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="58" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.0">
@@ -761,15 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/exsul/IWSMT/Random.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="60" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#594#608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/themes.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="54" selection-start="172" selection-end="172" vertical-scroll-proportion="-2.04">
@@ -777,13 +790,127 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="49" selection-start="570" selection-end="570" vertical-scroll-proportion="0.39534885">
+        <state line="12" column="23" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="38" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/exsul/IWSMT/IWSMT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="23" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/exsul/IWSMT/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="63" selection-start="610" selection-end="610" vertical-scroll-proportion="0.28492647">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#594#608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>IWSMT</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>TestFlightLib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

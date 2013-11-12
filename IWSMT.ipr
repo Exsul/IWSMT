@@ -187,22 +187,13 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.7.3/jsoup-1.7.3-sources.jar!/" />
       </SOURCES>
     </library>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <library name="TestFlightLib">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../TestFlightLib.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
   </component>
 </project>
 

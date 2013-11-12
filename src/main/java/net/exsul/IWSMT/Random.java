@@ -25,13 +25,21 @@ public class Random extends Activity {
 
     private void LoadNext() {
         ContentLoader cl = new ContentLoader();
-        elements.addAll(cl.LoadRandom());
+        List<ParsedObject> loaded = cl.LoadRandom();
+        if (loaded == null) {
+            finish();
+            System.exit(0);
+           // throw new NoSuchFieldException();
+        }
+        else
+            elements.addAll(loaded);
     }
 
     private PreparedObject GetNext() {
         if (elements.size() == 0)
             LoadNext();
-        assert(elements.size() != 0);
+        if (elements.size() == 0)
+            return new PreparedObject(new ParsedObject());
         ParsedObject obj = elements.get(0);
         elements.remove(0);
         return new PreparedObject(obj);
